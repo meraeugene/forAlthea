@@ -446,9 +446,7 @@ function displayTime(date) {
   const hours12 = date.getHours() % 12 || 12;
   const minutes = date.getMinutes();
 
-  return `${hours12.toString().padStart(2, "0")}:${minutes
-    .toString()
-    .padStart(2, "0")}`;
+  return `${hours12}:${minutes}`;
 }
 
 setInterval(() => {

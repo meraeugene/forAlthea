@@ -144,7 +144,6 @@ p.info-text {
 
 div#iphone {
   background: #121212;
-  border: 1px solid #c0c0c0;
   border-radius: 32px;
   max-width: 230.76px;
   padding: 8px;
@@ -236,6 +235,7 @@ div#content-wrap {
   -ms-transition: transform 0.25s ease;
   -o-transition: transform 0.25s ease;
   transition: transform 0.25s ease;
+  border-radius: 8px;
 }
 div#content-wrap.minimized {
   -moz-transform: scale(0);
@@ -322,14 +322,16 @@ div#header span {
   font-size: 20px;
 }
 div#header span .svg {
-  height: 16px;
-  width: 16px;
+  height: 12px;
+  width: 12px;
 }
 div#header span#menu-btn {
   float: left;
+  padding-left: 10px;
 }
 div#header span#options-btn {
   float: right;
+  padding-right: 10px;
 }
 
 div.jcarousel {
@@ -500,6 +502,7 @@ div#sidemenu {
   height: 100%;
   left: 0;
   padding: 20px 10px;
+  padding-top: 40px;
   position: absolute;
   top: 0;
   width: 100%;
@@ -571,6 +574,7 @@ div#song-options div#song-info img {
   -webkit-box-shadow: 0 2px 5px rgba(50, 50, 50, 0.2);
   -moz-box-shadow: 0 2px 5px rgba(50, 50, 50, 0.2);
   box-shadow: 0 2px 5px rgba(50, 50, 50, 0.2);
+  border-radius: 4px;
 }
 div#song-options div#song-info div.artist-wrap {
   box-sizing: border-box;
