@@ -434,20 +434,3 @@ function togglePlay() {
     player.pause();
   }
 }
-// dynamic date
-let timeElement = document.querySelector("#headerTime");
-
-/**
- * @param {Date} date
- */
-function formatTime(date) {
-  const hours12 = date.getHours() % 12 || 12;
-  const minutes = date.getMinutes();
-
-  return `${hours12.toString().padStart(2, "0")}:${minutes
-    .toString()
-    .padStart(2, "0")}`;
-}
-
-const now = new Date();
-timeElement.textContent = formatTime(now);
