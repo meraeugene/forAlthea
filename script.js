@@ -434,3 +434,24 @@ function togglePlay() {
     player.pause();
   }
 }
+
+// dynamic time
+const timeElement = document.querySelector("#headerTime");
+
+/**
+ * @param {Date} date
+ */
+
+function displayTime(date) {
+  const hours12 = date.getHours() % 12 || 12;
+  const minutes = date.getMinutes();
+
+  return `${hours12.toString().padStart(2, "0")}:${minutes
+    .toString()
+    .padStart(2, "0")}`;
+}
+
+setInterval(() => {
+  const now = new Date();
+  timeElement.textContent = displayTime(now);
+}, 200);

@@ -39,8 +39,7 @@
 /* body */
 body {
   background: #ecf0f1;
-  font-family: "proxima-nova", "Lato", "Source Sans Pro", "Raleway", Arial,
-    sans-serif;
+  font-family: "Roboto", sans-serif;
   height: 100vh;
   width: 100vw;
 }
@@ -82,7 +81,6 @@ div#home-screen {
 *:focus,
 *:active {
   outline: none;
-  font-family: "Roboto", sans-serif;
 }
 
 .clearfix:after,
@@ -101,8 +99,6 @@ body {
   height: 100vh;
   width: 100vw;
   background: #cba28f;
-  font-family: "proxima-nova", "Lato", "Source Sans Pro", "Raleway", Arial,
-    sans-serif;
   -webkit-transition: background 0.25s ease;
   -moz-transition: background 0.25s ease;
   -ms-transition: background 0.25s ease;
@@ -269,7 +265,6 @@ div#overlay {
   width: 100%;
   z-index: 3;
 }
-
 div#content {
   padding: 15px;
   position: relative;
@@ -364,7 +359,6 @@ div.jcarousel ul#songs li.song img {
   object-fit: cover;
   object-position: center;
 }
-
 div.jcarousel ul#songs li.song p {
   color: white;
   text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.15);
@@ -374,7 +368,6 @@ div.jcarousel ul#songs li.song p.song-title {
   font-weight: 600;
   margin: 10px 0 5px;
 }
-
 div.jcarousel ul#songs li.song p.song-artist {
   color: #b3b3b3;
   font-size: 12px;
@@ -659,8 +652,9 @@ div.menu span.close-btn {
   cursor: pointer;
   display: block;
   font-size: 14px;
-  margin: 0px auto 15px;
-  padding: 0;
+  margin: 5px auto 15px;
+  padding: 0 8px 4px;
+  text-align: center;
   width: 50px;
   -webkit-transition: color 0.25s ease;
   -moz-transition: color 0.25s ease;
@@ -739,25 +733,23 @@ div#home-screen div.home-content {
 div#home-screen div.home-content h2 {
   font-size: 22px;
   font-weight: 600;
-  color: #fff;
 }
 div#home-screen div.home-content p {
   font-size: 13px;
   line-height: 1.5;
   margin: 5px 0;
-  color: #fff;
 }
 div#home-screen div.home-content p#made-by a {
   color: white;
 }
 div#home-screen div.home-content p#icons-by {
+  color: #fff;
   bottom: 15px;
   font-size: 11px;
   left: 0;
   position: absolute;
   text-align: center;
   width: 100%;
-  color: #fff;
 }
 div#home-screen div.home-content p a {
   color: #fff;
