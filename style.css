@@ -12,6 +12,9 @@
   background: #2ecc71 !important;
 }
 
+/* Import Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
 /* Font with fallback */
 /*--------*/
 /* Mixins */
@@ -146,7 +149,7 @@ div#iphone {
   background: #121212;
   border: 1px solid #c0c0c0;
   border-radius: 32px;
-  max-width: 269.76px;
+  max-width: 230.76px;
   padding: 8px;
   -webkit-box-shadow: 0px 10px 25px rgba(51, 51, 51, 0.3);
   -moz-box-shadow: 0px 10px 25px rgba(51, 51, 51, 0.3);
@@ -164,6 +167,39 @@ div#iphone div#camera span:nth-child(1) {
   background-color: #121212;
   z-index: 99;
   top: 15px;
+}
+div#iphone div#camera #time {
+  position: absolute;
+  z-index: 100;
+  font-size: 0.7rem;
+  left: 45px;
+  top: 17px;
+  font-family: "Roboto", sans-serif;
+}
+
+div#iphone div#camera .signal {
+  width: 15px;
+  position: absolute;
+  right: 70px;
+  top: 15px;
+  z-index: 100;
+  width: 12px;
+}
+
+div#iphone div#camera .wifi {
+  position: absolute;
+  right: 50px;
+  top: 15px;
+  z-index: 100;
+  width: 12px;
+}
+
+div#iphone div#camera .battery {
+  position: absolute;
+  right: 28px;
+  top: 13px;
+  z-index: 100;
+  width: 16px;
 }
 
 div#iphone div#screen {
@@ -400,7 +436,7 @@ div#iphone div#home-btn {
   background-color: #fff;
   border-radius: 30px;
   position: absolute;
-  bottom: 12px;
+  bottom: 15px;
   transform: translate(-50%);
   left: 50%;
   z-index: 200;
@@ -681,9 +717,9 @@ div.menu li i {
 }
 
 div#home-screen {
-  background: #4f6f8f;
-  background: -webkit-linear-gradient(top, #4f6f8f, #3d566e);
-  background: linear-gradient(to bottom, #4f6f8f, #3d566e);
+  background: url(./img/song1.jpg);
+  background-position: center;
+  background-size: cover;
   height: 100%;
   left: 0;
   position: absolute;
@@ -703,26 +739,32 @@ div#home-screen div.home-content {
 div#home-screen div.home-content h2 {
   font-size: 22px;
   font-weight: 600;
+  text-shadow: -1px 1px 0 #121212, 1px 1px 0 #121212, 1px -1px 0 #121212;
+  color: #fff;
 }
 div#home-screen div.home-content p {
   font-size: 13px;
   line-height: 1.5;
   margin: 5px 0;
+  text-shadow: -1px 1px 0 #121212, 1px 1px 0 #121212, 1px -1px 0 #121212;
+  color: #fff;
 }
 div#home-screen div.home-content p#made-by a {
   color: white;
 }
 div#home-screen div.home-content p#icons-by {
-  color: #7796b4;
   bottom: 15px;
   font-size: 11px;
   left: 0;
   position: absolute;
   text-align: center;
   width: 100%;
+  text-shadow: -1px 3px 0 #121212, 1px 3px 0 #121212, 1px -1px 0 #121212;
+  color: #fff;
 }
 div#home-screen div.home-content p a {
-  color: #98afc6;
+  text-shadow: -1px 3px 0 #121212, 1px 3px 0 #121212, 1px -1px 0 #121212;
+  color: #fff;
   border-bottom: 1px solid #7796b4;
   text-decoration: none;
   padding: 0 1px;
@@ -743,21 +785,19 @@ div#home-screen div.home-content div.app-icon {
   margin: 30px auto 0;
   position: relative;
   width: 40px;
-  background: #0082fc;
-  background: -webkit-linear-gradient(top, #0082fc, #0082fc);
-  background: linear-gradient(to bottom, #0082fc, #0082fc);
+  background: #fff;
+  color: #121212;
+  font-size: 1.5rem;
 }
-div#home-screen div.home-content div.app-icon:hover {
-  background: #0082fc;
-  background: -webkit-linear-gradient(top, #0082fc, #0082fc);
-  background: linear-gradient(to bottom, #0082fc, #0082fc);
-}
+
 div#home-screen div.home-content div.app-icon::after {
   content: "Music Player";
   font-size: 10px;
   position: absolute;
   top: 45px;
   white-space: nowrap;
+  text-shadow: -1px 3px 0 #121212, 1px 3px 0 #121212, 1px -1px 0 #121212;
+  color: #fff;
 }
 div#home-screen div.home-content div.app-icon .svg {
   height: 60%;
