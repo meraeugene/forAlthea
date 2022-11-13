@@ -82,6 +82,7 @@ div#home-screen {
 *:focus,
 *:active {
   outline: none;
+  font-family: "Roboto", sans-serif;
 }
 
 .clearfix:after,
@@ -168,13 +169,12 @@ div#iphone div#camera span:nth-child(1) {
   z-index: 99;
   top: 15px;
 }
-div#iphone div#camera #time {
+div#iphone div#camera #headerTime {
   position: absolute;
   z-index: 100;
   font-size: 0.7rem;
   left: 45px;
   top: 17px;
-  font-family: "Roboto", sans-serif;
 }
 
 div#iphone div#camera .signal {
@@ -739,14 +739,12 @@ div#home-screen div.home-content {
 div#home-screen div.home-content h2 {
   font-size: 22px;
   font-weight: 600;
-  text-shadow: -1px 1px 0 #121212, 1px 1px 0 #121212, 1px -1px 0 #121212;
   color: #fff;
 }
 div#home-screen div.home-content p {
   font-size: 13px;
   line-height: 1.5;
   margin: 5px 0;
-  text-shadow: -1px 1px 0 #121212, 1px 1px 0 #121212, 1px -1px 0 #121212;
   color: #fff;
 }
 div#home-screen div.home-content p#made-by a {
@@ -759,11 +757,9 @@ div#home-screen div.home-content p#icons-by {
   position: absolute;
   text-align: center;
   width: 100%;
-  text-shadow: -1px 3px 0 #121212, 1px 3px 0 #121212, 1px -1px 0 #121212;
   color: #fff;
 }
 div#home-screen div.home-content p a {
-  text-shadow: -1px 3px 0 #121212, 1px 3px 0 #121212, 1px -1px 0 #121212;
   color: #fff;
   border-bottom: 1px solid #7796b4;
   text-decoration: none;
@@ -796,7 +792,6 @@ div#home-screen div.home-content div.app-icon::after {
   position: absolute;
   top: 45px;
   white-space: nowrap;
-  text-shadow: -1px 3px 0 #121212, 1px 3px 0 #121212, 1px -1px 0 #121212;
   color: #fff;
 }
 div#home-screen div.home-content div.app-icon .svg {
